@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,500,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shortcut icon" type="favicon" href="img/favicon.ico">
+	<title>to do list</title>
+</head>
+<body>
+	<main class="todo todo_position">
+		<h1 class="todo__logo">to do list</h1>
+		<input class="todo__input todo__input_size" type="text" name="add" placeholder="what needs to be done?" autofocus>
+		<section class="todo-aside">
+			<p class="todo__counter">
+				<span class="todo__counter_number"></span> дел осталось
+			</p>
+			<div class="todo__controls">
+				<button class="todo__controls_button todo__controls-all">Все</button>
+				<button class="todo__controls_button todo__controls-active">Активные</button>
+				<button class="todo__controls_button todo__controls-done">Выполненные</button>
+			</div>
+		</section>
+		<ul class="todo__list todo__list_position">
+			<li class="todo__list-item todo__list-item_position">
+				<input type="checkbox" class="todo__list-checkbox">
+				<span>покормить куриц</span>
+			</li>
+			<li class="todo__list-item todo__list-item_position">
+				<input type="checkbox" class="todo__list-checkbox">
+				<span>убить куриц</span>
+			</li>
+			<li class="todo__list-item todo__list-item_position">
+				<input type="checkbox" class="todo__list-checkbox">
+				<span>сделать куриный суп</span>
+			</li>
+		</ul>
+	</main>
+</body>
+</html>

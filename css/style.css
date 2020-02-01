@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-size: 24px;
+    font-family: 'Roboto Slab', serif;
+    background-image: linear-gradient(rgba(240, 230, 160, 1), rgba(200, 150, 30, 1));
+    color: rgba(10, 15, 60, 1);
+}
+
+.todo_position {
+    margin: 2rem;
+}
+
+.todo__logo {
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.todo__input {
+    font-size: 1rem;
+}
+
+.todo__input_size {
+    width: 94vw;
+    height: 5vw;
+
+    padding: 1vw 1.5vw;
+
+    border: none;
+    border-radius: 5px;
+}
+
+.todo__list {
+    list-style: none;
+}
+
+.todo__list-item:nth-child(odd) {
+    background-color: rgba(200, 150, 30, 0.3);
+}
+
+.todo__list-item_position {
+    width: 94vw;
+
+    margin-left: -40px;
+    padding: 20px 0;
+
+    border-bottom: 1px solid;
+}
+
+.todo__list-checkbox {
+    width: 1.5vw;
+    height: 1.5vw;
+
+    margin: 0 2rem;
+}
+
+.todo__list-checkbox:checked ~ span {
+    text-decoration: line-through;
+}
+
+/* Навигация под input */
+
+.todo-aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo__controls_button {
+    border: none;
+    border-radius: 5px;
+
+    font-size: inherit;
+
+    background-color: transparent;
+    font-family: inherit;
+}
+
+.todo__controls_button:active {
+    border: 1px solid;
+}

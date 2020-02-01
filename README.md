@@ -4,6 +4,6 @@ simple to-do list realised with vanilla js
 
 easy
 
-adaptive,
+adaptive
 
 fully a11y

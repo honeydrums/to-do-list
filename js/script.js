@@ -17,9 +17,17 @@ function onPageLoaded() {
 
 		ul.appendChild(li).append(checkbox, span, deleteButton);
 		input.value = "";
+		listenDeleteToDo(deleteButton);
 	}
 
 	// функция удаления пункта списка
+
+	function listenDeleteToDo(element) {
+		element.addEventListener("click", (event) => {
+			element.parentElement.remove();
+			event.stopPropagation();
+		})
+	}
 
 	//вызов функции, создающей пункт списка
 	input.addEventListener("keypress", (keyPressed) => {

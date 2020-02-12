@@ -15,9 +15,7 @@ function onPageLoaded() {
 		const newToDo = input.value;
 		span.append(newToDo);
 
-		ul.appendChild(li).append(checkbox);
-		ul.appendChild(li).append(span);
-		ul.appendChild(li).append(deleteButton);
+		ul.appendChild(li).append(checkbox, span, deleteButton);
 		input.value = "";
 	}
 
@@ -31,7 +29,7 @@ function onPageLoaded() {
 		}
 	});
 	// вызов функции, удаляющей пункт списка
-	
+
 	// ul.addEventListener("click", onClickTodo);
 }
 

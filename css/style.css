@@ -42,33 +42,66 @@ body {
     list-style: none;
 }
 
+.todo__list-item span {
+    margin-right: auto;
+}
+
 .todo__list-item:nth-child(odd) {
     background-color: rgba(200, 150, 30, 0.3);
 }
 
 .todo__list-item_position {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     width: 94vw;
 
     margin-left: -40px;
-    padding: 20px 0;
+    padding: 20px;
 
     border-bottom: 1px solid;
 }
 
 .todo__list-checkbox {
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.8rem;
+    height: 1.8rem;
 
-    margin: 0 2rem;
+    margin: 0 0.5rem;
 }
 
 .todo__list-checkbox:checked ~ span {
     text-decoration: line-through;
 }
 
+/* кнопка "удалить" */
+
+.todo__delete {
+    width: 1.8rem;
+    height: 1.8rem;
+
+    border: none;
+
+    background-color: transparent;
+    background-image: url('../img/delete.svg');
+    background-size: contain;
+
+    cursor: pointer;
+}
+
+.todo__delete:hover {
+    opacity: 0.5;
+}
+
+.todo__delete:active {
+    opacity: 1;
+}
+
 /* Навигация под input */
 
 .todo-aside {
+    width: 94vw;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -76,14 +109,14 @@ body {
 
 .todo__controls_button {
     border: none;
-    border-radius: 5px;
 
     font-size: inherit;
 
     background-color: transparent;
     font-family: inherit;
+    font-size: 1.3rem;
 }
 
 .todo__controls_button:active {
-    border: 1px solid;
+    outline: 1px solid;
 }

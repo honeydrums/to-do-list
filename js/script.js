@@ -36,8 +36,6 @@ function onPageLoaded() {
 			createToDo();
 		}
 	});
-	// вызов функции, удаляющей пункт списка
-
 	// ul.addEventListener("click", onClickTodo);
 }
 
